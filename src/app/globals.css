@@ -1,8 +1,68 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+@import "tailwindcss/preflight";
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary Colors */
+  --primary-50: #e8e9ea;
+  --primary-100: #b8babd;
+  --primary-200: #96989d;
+  --primary-300: #666971;
+  --primary-400: #484c55;
+  --primary-500: #1a1f2b;
+  --primary-600: #181c27;
+  --primary-700: #12161f;
+  --primary-800: #0e1118;
+  --primary-900: #0b0d12;
+
+  /* Secondary Colors */
+  --secondary-50: #eaebef;
+  --secondary-100: #bfc2cc;
+  --secondary-200: #a0a4b4;
+  --secondary-300: #747a92;
+  --secondary-400: #59617d;
+  --secondary-500: #30395c;
+  --secondary-600: #2c3454;
+  --secondary-700: #222841;
+  --secondary-800: #1a1f33;
+  --secondary-900: #141827;
+
+  /* Details Colors */
+  --details-50: #edf0f4;
+  --details-100: #c7cfdd;
+  --details-200: #acb8cc;
+  --details-300: #8697b5;
+  --details-400: #6e83a7;
+  --details-500: #4a6491;
+  --details-600: #435b84;
+  --details-700: #354767;
+  --details-800: #293750;
+  --details-900: #1f2a3d;
+
+  /* Text Colors */
+  --text-color-50: #fafcfe;
+  --text-color-100: #f0f7fb;
+  --text-color-200: #e9f3f9;
+  --text-color-300: #e0edf6;
+  --text-color-400: #d9e9f5;
+  --text-color-500: #d0e4f2;
+  --text-color-600: #bdcfdc;
+  --text-color-700: #94a2ac;
+  --text-color-800: #727d85;
+  --text-color-900: #576066;
+
+  /* Third Colors */
+  --third-50: #f3f6fa;
+  --third-100: #d9e3ef;
+  --third-200: #c7d6e8;
+  --third-300: #adc3dd;
+  --third-400: #9db7d6;
+  --third-500: #85a5cc;
+  --third-600: #7996ba;
+  --third-700: #5e7591;
+  --third-800: #495b70;
+  --third-900: #384556;
 }
 
 @theme inline {
@@ -20,7 +80,7 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--primary-500);
+  color: var(--text-color-50);
+  font-family: "Montserrat", sans-serif;
 }
